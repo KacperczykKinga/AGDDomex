@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domex</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/wwwroot/css/styles.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/wwwroot/css/styles.css" asp-append-version="true" />
+    </environment>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <script>
+        $(document).ready(function () {
+            function disablePrev() { window.history.forward() }
+         window.onload = disablePrev();
+         window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+      });
+    </script>
+    <partial name="_CookieConsentPartial" />
+
+
+    <div id="container">
+
+        <div id="logo">
+            Domex
+            <div id="pictures">
+                <img id="avatar" src="~/zdjecia/avatar.png" height="35px" width="35px" />
+                <br />
+                <img id="shopping_cart" src="~/zdjecia/shopping_cart.png" height="35px" width="35px" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("Koszyk", "Koszyk")'" />
+            </div>
+            <div id="data">
+                Witaj Kinga
+                <br />
+                Cena:
+                @ViewBag.Koszt
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2019 - RabBitCompany</p>
+        </footer>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewBag.Title = "Koszyk";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div id="sztuczny">
+    <div id="catalogue">
+        Zawartość koszyka
+    </div>
+</div>
+@if (@ViewBag.NoteFromBasket == "Added")
+{
+    <div id="note">
+        Produkt został poprawnie dodany
+    </div>
+}
+@if (@ViewBag.NoteFromBasket == "TooLittle")
+{
+    <div id="note">
+        Nie ma produktu w magazynie
+    </div>
+}
+<div id="falszywy"></div>
+<div id="line">
+</div>
+
+<div id="wKoszyku">
+    @foreach (var poz in ViewBag.Pozycje)
+    {
+        int ktoryProdukt = ViewBag.Pozycje.IndexOf(poz);
+        var prod = ViewBag.ProduktyPozycji[ktoryProdukt];
+        var kata = ViewBag.KatalogiPozycji[ktoryProdukt];
+        <div id="bigPositionPlace">
+            <div id="bigPosition">
+                <div id="zdjKosz">
+                    <img src=@prod.zdjecie />
+                </div>
+                <div id="obokzdjKosz">
+                    <div id="napisKosz">
+                        @prod.nazwa
+                    </div>
+                    <div id="nazwaKat">
+                        @kata.nazwa
+                    </div>
+                    <div id="falszywyPusty2"></div>
+                    <div id="triangle" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("Add2", "Koszyk", new {index = prod.idProduktu })'"></div>
+                    <div id="falszywyPusty2"></div>
+                    <div id="napisKosz">
+                        Ilość: &nbsp;&nbsp;&nbsp;  @poz.ilosc
+                    </div>
+                    <div id="falszywyPusty2"></div>
+                    <div id="triangle2" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("Minus", "Koszyk", new {index = prod.idProduktu })'"></div>
+                    <div id="falszywyPusty3"></div>
+                    <div id="napisKosz">
+                        Cena:
+                    </div>
+                    <div id="cenaKosz">
+                        @ViewBag.CenyPozycji[ktoryProdukt] zł
+                    </div>
+                </div>
+                <div id="koszyk" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("Delete", "Koszyk", new {index = prod.idProduktu })'">
+                    <img src="~/zdjecia/garbage.png" height="35px" width="35px" />
+                </div>
+            </div>
+        </div>
+    }
+    <div id="napisSumy">
+        Suma:
+    </div>
+    <div id="cenaKosz">
+        @ViewBag.Koszt zł
+    </div>
+</div>
+<div id="zamow">
+    <div id="przyciskPlace">
+        <div id="przycisk">
+            Zamów
+        </div>
+    </div>
+    <div id="przyciskPlace" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("KatalogProduktow", "KatalogProduktow")'">
+        <div id="przycisk">
+            Wróć do katalogów
+        </div>
+    </div>
+</div>
+<div id="falszywy">
+
+</div>

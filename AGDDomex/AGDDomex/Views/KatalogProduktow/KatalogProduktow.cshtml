@@ -1,0 +1,28 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "KatalogProduktow";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <div id="catalogue">
+        Katalogi produktów
+    </div>
+<div id="line">
+</div>
+@foreach (var x in ViewBag.Katalogi)
+{
+    <div id="bigButtonPlace">
+        <div id="bigButton" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("jedenKatalog", "Produkt", new {index = x.idKatalogu })'">
+            <div id="zdj">
+                <img src=@x.obrazek />
+            </div>
+            <div id="napis">
+                @x.nazwa
+            </div>
+        </div>
+    </div>
+
+}
+<div id="falszywy">
+
+</div>

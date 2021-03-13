@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPozycjaKoszyka xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PozycjaKoszyka>
+    <ProduktIdProduktu>5</ProduktIdProduktu>
+    <KoszykIdKoszyka>1</KoszykIdKoszyka>
+    <ilosc>1</ilosc>
+  </PozycjaKoszyka>
+</ArrayOfPozycjaKoszyka>

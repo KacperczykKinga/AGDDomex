@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProdukt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>1</idProduktu>
+    <nazwa>Czajnik elektryczny Kassel</nazwa>
+    <cena>139.99</cena>
+    <marka>Kassel</marka>
+    <ilosc>3</ilosc>
+    <minimalnaIloscWSklepie>2</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/czajnik_elektryczny_kassel_sza.png</zdjecie>
+    <szczegoly> Pojemność: 1.7 l 
+	 Moc: 2200 W 
+	 Wykonanie: metal, tworzywo sztuczne 
+	 Element grzejny: grzałka płytowa 
+	 Kolor: srebrny / szary</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>2</idProduktu>
+    <nazwa>Czajnik elektryczny Philips</nazwa>
+    <cena>119.99</cena>
+    <marka>Philips</marka>
+    <ilosc>2</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/pobraneXD.png</zdjecie>
+    <szczegoly> Pojemność: 1.5 l 
+	 Moc: 2000 W 
+	 Wykonanie: tworzywo sztuczne 
+	 Element grzejny: grzałka płytowa 
+	 Kolor: srebrny / bordo / czarny</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>5</idProduktu>
+    <nazwa>Czajnik elektryczny Łucznik</nazwa>
+    <cena>39.99</cena>
+    <marka>Łucznik</marka>
+    <ilosc>5</ilosc>
+    <minimalnaIloscWSklepie>3</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>2</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/ucznik_wk_1800.png</zdjecie>
+    <szczegoly> Pojemność: 1.9 l 
+	 Moc: 2300 W 
+	 Wykonanie: metal, tworzywo sztuczne 
+	 Element grzejny: grzałka płytowa 
+	 Kolor: srebrny / czarny</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>6</idProduktu>
+    <nazwa>Czajnik elektryczny Ariete</nazwa>
+    <cena>159.99</cena>
+    <marka>Ariete</marka>
+    <ilosc>2</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/ariete_286905_vintage_niebiesk.png</zdjecie>
+    <szczegoly> Pojemność: 1.2 l 
+	 Moc: 2400 W 
+	 Wykonanie: metal, tworzywo sztuczne 
+	 Element grzejny: grzałka płytowa 
+	 Kolor: srebrny / niebieski / kremowy</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>7</idProduktu>
+    <nazwa>Ekspres do kawy Philips</nazwa>
+    <cena>2159.99</cena>
+    <marka>Philips</marka>
+    <ilosc>1</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>0</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/pobrane__3_.png</zdjecie>
+    <szczegoly> Typ ekspresu: automatyczny 
+	 Dostępne napoje: Americano, Cappuccino, Cortado, Espresso, Espresso Macchiato, Flat White, Gorąca woda, Kawa z mlekiem, Latte Macchiato, Spienione mleko 
+	 Ciśnienie / Moc: 19 barów / 1500 W</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>9</idProduktu>
+    <nazwa>Blender Bosch</nazwa>
+    <cena>239.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>4</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/bosch_ms62b6190_45070036289_7.png</zdjecie>
+    <szczegoly> Funkcje: mieszanie, miksowanie 
+	 Moc silnika: 750 W 
+	 Liczba poziomów obrotów: 12</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>10</idProduktu>
+    <nazwa>Blender Bosch</nazwa>
+    <cena>99.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>5</ilosc>
+    <minimalnaIloscWSklepie>3</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/res_cc79012893eabe5f7ab6427649.png</zdjecie>
+    <szczegoly> Funkcje: mieszanie, miksowanie 
+	 Moc silnika: 850 W 
+	 Liczba poziomów obrotów: 15</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>11</idProduktu>
+    <nazwa>Toster Bosch</nazwa>
+    <cena>89.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>4</ilosc>
+    <minimalnaIloscWSklepie>2</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/bosch_comfortline_tat6a113_168.png</zdjecie>
+    <szczegoly> Rodzaj tostera: dwuszczelinowy 
+	 Moc: 980 W 
+	 Liczba tostów: 2</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>14</idProduktu>
+    <nazwa>Gofrownica_Philips</nazwa>
+    <cena>199.99</cena>
+    <marka>Philips</marka>
+    <ilosc>2</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/HD2392_90_RTP_global_001.png</zdjecie>
+    <szczegoly> Liczba i kształt gofrów: 2 kwadraty 
+	 Moc: 1600 W</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>15</idProduktu>
+    <nazwa>Chlebak Husla</nazwa>
+    <cena>89.99</cena>
+    <marka>Husla</marka>
+    <ilosc>5</ilosc>
+    <minimalnaIloscWSklepie>3</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/mediuma.png</zdjecie>
+    <szczegoly> Wykonanie: drewno</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>16</idProduktu>
+    <nazwa>Chlebak Zeller</nazwa>
+    <cena>109.99</cena>
+    <marka>Zeller</marka>
+    <ilosc>2</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/ID6086714_0.png</zdjecie>
+    <szczegoly> Wykonanie: drewno, metal</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>18</idProduktu>
+    <nazwa>Mikser Bosch</nazwa>
+    <cena>99.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>3</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/bosch_mfq22100_14072290535_7.png</zdjecie>
+    <szczegoly> Funkcje: mieszanie, miksowanie 
+	 Moc silnika: 350 W 
+	 Liczba poziomów obrotów: 3</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>1</katalogProduktowIdKatalogu>
+    <idProduktu>19</idProduktu>
+    <nazwa>Mikser Philips</nazwa>
+    <cena>189.99</cena>
+    <marka>Philips</marka>
+    <ilosc>2</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/ID741853_0.png</zdjecie>
+    <szczegoly> Funkcje: mieszanie, miksowanie, rozdrabnianie(siekanie), ubijanie piany 
+	 Moc silnika: 450 W 
+	 Liczba poziomów obrotów: 5</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>2</katalogProduktowIdKatalogu>
+    <idProduktu>29</idProduktu>
+    <nazwa>Odkurzacz Blaupunkt</nazwa>
+    <cena>169.99</cena>
+    <marka>Blaupunkt</marka>
+    <ilosc>3</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/odkurzacz_bezworkowy_blaupunkt.png</zdjecie>
+    <szczegoly> Poziom hałasu: 58 dB 
+	 Moc wejściowa: 650 W 
+	 Pojemność worka / pojemnika: 3, 5 litra</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>2</katalogProduktowIdKatalogu>
+    <idProduktu>30</idProduktu>
+    <nazwa>Odkurzacz Bosch</nazwa>
+    <cena>239.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>2</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/full.png</zdjecie>
+    <szczegoly> Poziom hałasu: 48 dB 
+	 Moc wejściowa: 750 W 
+	 Pojemność worka / pojemnika: 4, 5 litra</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>2</katalogProduktowIdKatalogu>
+    <idProduktu>34</idProduktu>
+    <nazwa>Odkurzacz pionowy Bosch</nazwa>
+    <cena>999.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>3</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/odkurzacz_pionowy.png</zdjecie>
+    <szczegoly> Poziom hałasu: 38 dB 
+	 Moc wejściowa: 800 W 
+	 Pojemność worka / pojemnika: 3, 8 litra</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>3</katalogProduktowIdKatalogu>
+    <idProduktu>39</idProduktu>
+    <nazwa>Suszarka Rowenta</nazwa>
+    <cena>75.99</cena>
+    <marka>Roventa</marka>
+    <ilosc>6</ilosc>
+    <minimalnaIloscWSklepie>2</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>2</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/ID2.png</zdjecie>
+    <szczegoly> Moc: 1800 W 
+	 Zimny nawiew: tak 
+	 Liczba zakresów temperatury: 3</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>3</katalogProduktowIdKatalogu>
+    <idProduktu>42</idProduktu>
+    <nazwa>Prostownica Philips</nazwa>
+    <cena>239.99</cena>
+    <marka>Philips</marka>
+    <ilosc>4</ilosc>
+    <minimalnaIloscWSklepie>2</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/philips_pro.png</zdjecie>
+    <szczegoly> Temperatura maksymalna: 230 stopni 
+	 Powłoka płytek: ceramiczna 
+	 Liczba poziomów temperatury: 5</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>3</katalogProduktowIdKatalogu>
+    <idProduktu>43</idProduktu>
+    <nazwa>Prostownica Bosch</nazwa>
+    <cena>99.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>6</ilosc>
+    <minimalnaIloscWSklepie>3</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>2</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/bosch_classiccoiffeur.png</zdjecie>
+    <szczegoly> Temperatura maksymalna: 200 stopni 
+	 Powłoka płytek: ceramiczna 
+	 Liczba poziomów temperatury: 3</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>3</katalogProduktowIdKatalogu>
+    <idProduktu>44</idProduktu>
+    <nazwa>Lokówka Philips</nazwa>
+    <cena>149.99</cena>
+    <marka>Philips</marka>
+    <ilosc>5</ilosc>
+    <minimalnaIloscWSklepie>2</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>2</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/pobraneXDDD.png</zdjecie>
+    <szczegoly> Moc: 1000 
+	 Średnica: 20 mm, 50 mm</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>4</katalogProduktowIdKatalogu>
+    <idProduktu>52</idProduktu>
+    <nazwa>Żelazko Tefal</nazwa>
+    <cena>349.99</cena>
+    <marka>Tefal</marka>
+    <ilosc>4</ilosc>
+    <minimalnaIloscWSklepie>2</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/tefal_fv9785_22395001217_7.png</zdjecie>
+    <szczegoly> Moc/Wytwarzanie pary: 2200 W, 25 g/min 
+	 Rodzaj stopy: ceramiczna 
+	 Pionowy wyrzut pary: tak</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>4</katalogProduktowIdKatalogu>
+    <idProduktu>56</idProduktu>
+    <nazwa>Deska do prasowania Tefal</nazwa>
+    <cena>199.99</cena>
+    <marka>Tefal</marka>
+    <ilosc>3</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/tefal_ti1200e1_22200928961_7.png</zdjecie>
+    <szczegoly> Blat deski: 120 x 38 cm , siatka metalowa 
+	 Regulacja: skokowa</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>5</katalogProduktowIdKatalogu>
+    <idProduktu>57</idProduktu>
+    <nazwa>Zmywarka Bosch</nazwa>
+    <cena>1199.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>2</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/bosch_sps25ci02e_25457805561_7.png</zdjecie>
+    <szczegoly> Wymiary (SxWxG): 60 x 85 x 59 cm 
+	 Pojemność: 14 kpl. 
+	 Zużycie wody - cykl: 6, 5 litra 
+	 Poziom hałasu: 43 dB 
+	 System mycia sztućców: koszyk na sztućce</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>5</katalogProduktowIdKatalogu>
+    <idProduktu>58</idProduktu>
+    <nazwa>Zmywarka Elektrolux</nazwa>
+    <cena>1349.99</cena>
+    <marka>Elektrolux</marka>
+    <ilosc>2</ilosc>
+    <minimalnaIloscWSklepie>0</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/electrolux_esf4513lox_22361722.png</zdjecie>
+    <szczegoly> Wymiary (SxWxG): 70 x 85 x 59 cm 
+	 Pojemność: 16 kpl. 
+	 Zużycie wody - cykl: 4, 5 litra 
+	 Poziom hałasu: 33 dB 
+	 System mycia sztućców: koszyk na sztućce</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>5</katalogProduktowIdKatalogu>
+    <idProduktu>59</idProduktu>
+    <nazwa>Kuchenka Elektrolux</nazwa>
+    <cena>999.99</cena>
+    <marka>Elektrolux</marka>
+    <ilosc>3</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/electrolux_ekk54552ox_74359422.png</zdjecie>
+    <szczegoly> Wymiary (SxWxG): 50 x 85 x 60 cm 
+	 Termoobieg: tak 
+	 Typ prowadnic: wytłaczane</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>5</katalogProduktowIdKatalogu>
+    <idProduktu>61</idProduktu>
+    <nazwa>Kuchenka mikrofalowa Amica</nazwa>
+    <cena>299.99</cena>
+    <marka>Amica</marka>
+    <ilosc>3</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/amica_ammf20m1gb_43347353289_7.png</zdjecie>
+    <szczegoly> Pojemność: 20 litrów 
+	 Wymiary(GxSxW): 35, 5 x 44 x 25, 9 cm 
+	 Moc mikrofal: 700 W</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>5</katalogProduktowIdKatalogu>
+    <idProduktu>66</idProduktu>
+    <nazwa>Piekarnik Amica</nazwa>
+    <cena>899.88</cena>
+    <marka>Amica</marka>
+    <ilosc>4</ilosc>
+    <minimalnaIloscWSklepie>2</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/pobraneXDDDDD.png</zdjecie>
+    <szczegoly> Wymiary (bez el. wystaj.) SxWxG: 59,5 x 59,5 x 57,5 cm 
+	 Typ prowadnic w piekarniku: teleskopowe - dwa poziomy</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>6</katalogProduktowIdKatalogu>
+    <idProduktu>67</idProduktu>
+    <nazwa>Pralka Amica</nazwa>
+    <cena>999.99</cena>
+    <marka>Amica</marka>
+    <ilosc>3</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/pobraneXXd.png</zdjecie>
+    <szczegoly> Wymiary (GxSxW): 42,5 x 59,5 x 83,7 cm 
+	 Pojemność: 6 kg 
+	 Poziom hałasu(pranie / wirowanie): 62 dB / 85 dB 
+	 Maksymalna prędkość wirowania: 1200 obr / min</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>6</katalogProduktowIdKatalogu>
+    <idProduktu>69</idProduktu>
+    <nazwa>Pralko-suszarka Bosch</nazwa>
+    <cena>3099.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>2</ilosc>
+    <minimalnaIloscWSklepie>1</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>1</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/bosch_pralko_suszarka_wvh2849e.png</zdjecie>
+    <szczegoly> Klasa energetyczna: A 
+	 Wymiary(GxSxW): 40 x 60 x 85 cm 
+	 Pojemność(pranie / suszenie): 6 kg / 4 kg 
+	 Prędkość wirowania: 1400 obr / min</szczegoly>
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>8</katalogProduktowIdKatalogu>
+    <idProduktu>75</idProduktu>
+    <nazwa>Proszek do prania Persil</nazwa>
+    <cena>39.99</cena>
+    <marka>Persil</marka>
+    <ilosc>7</ilosc>
+    <minimalnaIloscWSklepie>3</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>2</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/pobrane__1_.png</zdjecie>
+    <szczegoly />
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>8</katalogProduktowIdKatalogu>
+    <idProduktu>76</idProduktu>
+    <nazwa>Proszek do prania Vizir</nazwa>
+    <cena>29.99</cena>
+    <marka>Vizir</marka>
+    <ilosc>8</ilosc>
+    <minimalnaIloscWSklepie>4</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>2</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/Proszek_do_prania_Vizir_Alpine.png</zdjecie>
+    <szczegoly />
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>8</katalogProduktowIdKatalogu>
+    <idProduktu>77</idProduktu>
+    <nazwa>Tabletki do zmywarki Fairy</nazwa>
+    <cena>89.99</cena>
+    <marka>Fairy</marka>
+    <ilosc>9</ilosc>
+    <minimalnaIloscWSklepie>3</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>4</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/Fairy_Platinum_tabletki_do_zmy.png</zdjecie>
+    <szczegoly />
+  </Produkt>
+  <Produkt>
+    <katalogProduktowIdKatalogu>8</katalogProduktowIdKatalogu>
+    <idProduktu>79</idProduktu>
+    <nazwa>Worki do odkurzacza Bosch</nazwa>
+    <cena>19.99</cena>
+    <marka>Bosch</marka>
+    <ilosc>9</ilosc>
+    <minimalnaIloscWSklepie>3</minimalnaIloscWSklepie>
+    <minimalnaIloscWMagazynie>3</minimalnaIloscWMagazynie>
+    <zdjecie>/zdjecia/ID12x_WORKI_DO_ODKURZACZA_BOSC.png</zdjecie>
+    <szczegoly>Typ worka: syntetyczny</szczegoly>
+  </Produkt>
+</ArrayOfProdukt>

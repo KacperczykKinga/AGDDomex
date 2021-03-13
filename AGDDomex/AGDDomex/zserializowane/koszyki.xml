@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKoszyk xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Koszyk>
+    <idKoszyka>1</idKoszyka>
+  </Koszyk>
+  <Koszyk>
+    <idKoszyka>2</idKoszyka>
+  </Koszyk>
+  <Koszyk>
+    <idKoszyka>3</idKoszyka>
+  </Koszyk>
+</ArrayOfKoszyk>

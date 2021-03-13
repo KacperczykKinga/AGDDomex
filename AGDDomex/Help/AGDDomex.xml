@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>AGDDomex</name>
+  </assembly>
+  <members>
+    <member name="T:AGDDomex.Controllers.BaseController">
+      <summary>
+        <para>klasa po ktrej dziedziczą inne kontrolery w aplikacji, zawiera metodę wykonywaną dla każdego kontrolera w aplikacjij</para>
+      </summary>
+    </member>
+    <member name="M:AGDDomex.Controllers.BaseController.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+      <summary>metoda wykonująca się podczas ladowanie kazdej strony aplikacji, przekazuje do glownego pliku interfejsu informacje o tym ile kosztuja produkty w koszyku zalogowanej osoby</summary>
+      <param name="filterContext">zawiera informacje o obecnej akcji</param>
+    </member>
+    <member name="T:AGDDomex.Controllers.KatalogProduktowController">
+      <summary>kontroler kontrolujacy widoki ktore zawieraja dane o katalogach produktow</summary>
+    </member>
+    <member name="M:AGDDomex.Controllers.KatalogProduktowController.KatalogProduktow">
+      <summary>metoda przekazujaca do odpowiedniego widoku dane o katalogach produktow umieszczonych w zserializowanym pliku i uruchamiajaca odpowiedni widok</summary>
+    </member>
+    <member name="T:AGDDomex.Controllers.KoszykController">
+      <summary>
+   kontroler kontrolujacy widoki ktore zawieraja pozycje koszyka oraz zapewniajacy pelna obsluge koszyka czyli dodawnaie produktu do koszyka, usuwanie produktu, zmniejszanie i zwiekszanie ilosci produktu w koszyku
+   </summary>
+    </member>
+    <member name="M:AGDDomex.Controllers.KoszykController.Koszyk(String)">
+      <summary>
+   metoda ktora powoduje przekazanie odpowiedniemu widokowi dane o pozycjach koszyka znajdujacych sie w koszyku zalogowanej osoby, dane kosztow popszczegolnych pozycji koszyka, kosztow wszystkich pozycji koszyka oraz dane o tym, czy ilosc danego produktu w koszyku poprawnie ulegla zwiekszeniu
+   </summary>
+      <param name="mess">
+   parametr zawierajacy informacje o tym czy ilosc produktu w koszyku zostala poprawnie zwiekszona czy tez nie, przyjmuje wartosc null gdy ilosc produktu w koszyku nie probowala byc zwiekszona
+   </param>
+    </member>
+    <member name="M:AGDDomex.Controllers.KoszykController.Add(System.Int32)">
+      <summary>
+   metoda, ktora dodaje do pozycji koszyka zalogowanej osoby produkt o danym indeksie, czyli gdy taki produkt istnieje juz w pozycjach koszyka zalogowanej osoby, zwieksza jego ilosc (o ile odpowiednia liczba produktu znajduje sie w magazynie) lub dodaje nowa popzycje koszyka, przekierowuje do strony produktu, ktory chcielismy dodac wraz z informacja o tym czy produkt zostal pomyslnie dodany do koszyka czy tez bylo go zbyt malo w magazynie
+   </summary>
+      <param name="index">parametr z indeksem produktu, ktory chcemy dodac do koszyka</param>
+    </member>
+    <member name="M:AGDDomex.Controllers.KoszykController.Add2(System.Int32)">
+      <summary>
+   metoda, ktora zwieksza ilosc danego produktu w koszyku zalogowanej osoby (o ile odpowiednia liczba danego produktu znajduje się w magazynie), przekierowuje do widoku koszyka wraz z informacja czy udalo się zwiększyć ilosc danego produktu czy też nie
+   </summary>
+      <param name="index">zawiera informację o tym ktrego produktu w pozycjach koszyka zalogowanej osoby ilosc chcemy zwiększyć</param>
+    </member>
+    <member name="M:AGDDomex.Controllers.KoszykController.Minus(System.Int32)">
+      <summary>
+   metoda, ktora zmniejsza ilosc danego produktu w koszyku zalogowanej osoby lub usuwa daną pozycje koszyka jeśli ilosc produktu tej pozycji jest rowna 0, przekierowuje do widoku koszyka ie
+   </summary>
+      <param name="index">zawiera informację o tym ktrego produktu w pozycjach koszyka zalogowanej osoby ilosc chcemy zmniejszyć</param>
+    </member>
+    <member name="M:AGDDomex.Controllers.KoszykController.Delete(System.Int32)">
+      <summary>metoda, ktora usuwa pozycje koszykazalogowanej osoby, ktora zawiera dany produkt</summary>
+      <param name="index">parametr zaiwerajcy informacje o tym ktory produkt chcemy usunac z pozycji koszyka zalogowanej osoby</param>
+    </member>
+    <member name="T:AGDDomex.Controllers.ProduktController">
+      <summary>kontroler kontrolujacy widoki, ktore wyswietlaja dane produktow</summary>
+    </member>
+    <member name="M:AGDDomex.Controllers.ProduktController.jedenKatalog(System.Int32)">
+      <summary>
+   metoda, ktora pobiera dane z formularza po jego zatwierdzeniu i wybiera oraz przekazuje do widoku produkty z produktow z danego katalogu produktow, te ktore odpowiadaja opcjom zaznaczonym w formularzu, gdy nic z formularza nie jest odznaczone, przekazuje wszystkie dane produktow z katalogu produktu, ponadto przekazuje dane do formularza na podstawie daych produktow znajdujacych sie w wybranym katalogu
+   </summary>
+      <param name="index">parametr zawierający informacje o tym z ktorego katalogu produkty chcemy wyswietlac</param>
+    </member>
+    <member name="M:AGDDomex.Controllers.ProduktController.jedenProdukt(System.Int32,String)">
+      <summary>metoda przekazujaca widokowi dane wybranego produktu i opcjonalnie informacje o tym czy produkt udalo sie dodac do koszyka czy tez nie  </summary>
+      <param name="index">parametr zawierajacy informacje o tym jakiego produktu dane chcemy zobaczyć</param>
+      <param name="mess">parametr zawierajacy infromacje o tym czy produkt udalo sie dodać do koszyka czyt też nie, domyślnie zawiera wartość null - gdy nie chcieliśmy dodawać produktu do koszyka</param>
+    </member>
+    <member name="T:AGDDomex.Models.CenaProduktowWKoszyku">
+      <summary>klasa zwracajaca cenę wszytskich produktow znajdujacych się w koszyku zalogowanej osoby</summary>
+    </member>
+    <member name="M:AGDDomex.Models.CenaProduktowWKoszyku.cena(System.Int32,List{Produkt},List{PozycjaKoszyka})">
+      <summary>metoda ktora wylicza cenę wszystkich produktow znajdujacych sie na pozycjach koszyka zalogowanej osoby</summary>
+      <param name="index">parametr zawierajacy informacje o tym z ktorej osoby koszyka dane chcemy pobierać</param>
+      <param name="wszystkieProdukty">parametr zawierajacy wszystkie produkty aplikacji</param>
+      <param name="wszystkiePozycjeKoszykow">parametr zawierajacy wszystkie pozycje koszykow aplikacji</param>
+    </member>
+    <member name="T:AGDDomex.Models.Dane">
+      <summary>
+        <para>klasa ktora zawiera metody pobierajace dane z zserializowanych plikow i zapisujace dane do zserializowanych plikow</para>
+      </summary>
+    </member>
+    <member name="M:AGDDomex.Models.Dane.dajKatalogi(String)">
+      <summary>metoda ktora zwraca listę katalogow produktow zserializowanych w pliku</summary>
+      <param name="fullPath">
+        <para>parametr zawierający informację o ścieżce do zsrializowanego pliku</para>
+      </param>
+    </member>
+    <member name="M:AGDDomex.Models.Dane.dajPozycje(System.Int32,String)">
+      <summary>metoda ktora zwraca listę pozycji koszykow zalogowanej osoby zserializowanych w pliku</summary>
+      <param name="index">parametr zawierajacy informację o tym</param>
+      <param name="fullPath">parametr zawierający informację o ścieżce do zsrializowanego pliku</param>
+    </member>
+    <member name="M:AGDDomex.Models.Dane.dajProdukty(String)">
+      <summary>metoda, ktora zwraza listę produktow zserializowanych w pliku</summary>
+      <param name="fullPath">parametr zawierający informację o ścieżce do zsrializowanego pliku</param>
+    </member>
+    <member name="M:AGDDomex.Models.Dane.wezPozycje(List{PozycjaKoszyka})">
+      <summary>metoda serializująca pozycje koszykow do pliku</summary>
+      <param name="pozycje">parametr zawierający listę pozycji koszykow do zserializowania</param>
+    </member>
+    <member name="T:AGDDomex.Models.Formularz">
+      <summary>klasa do obslugi formularza</summary>
+    </member>
+    <member name="F:AGDDomex.Models.Formularz.marki">
+      <summary>zmienna do przechowywania napisu z wybranymi markami po przecinku</summary>
+    </member>
+    <member name="F:AGDDomex.Models.Formularz.rodzaje">
+      <summary>zmienna do przechowywania napisu z wybranymi rodzajami produktow po przecinku</summary>
+    </member>
+    <member name="F:AGDDomex.Models.Formularz.sort">
+      <summary>zmienna do przechowywania napisu informujacego o tym czy i jak posortowac liste produktow</summary>
+    </member>
+    <member name="F:AGDDomex.Models.Formularz.cena">
+      <summary>zmienna do przechowywania napisu informujacego o maksymalnej cenie produktow na liscie</summary>
+    </member>
+    <member name="M:AGDDomex.Models.Formularz.#ctor(String,String,String,String)">
+      <summary>konstruktor inicjalizujący zmienne formularza</summary>
+      <param name="m">napis zaiwerający wybrane marki wypisane po przecinku</param>
+      <param name="r">napis zaiwerający wybrane rodzaje produktow wypisane po przecinku</param>
+      <param name="s">napis zawierajacy informacje o tym czy i jak sortowac listę produktow</param>
+      <param name="c">napis zawierajacy informacje o maksymalnej cenie produktow na liscie</param>
+    </member>
+    <member name="M:AGDDomex.Models.Formularz.dajMarki">
+      <summary>metoda zwracająca tablicę Stringow zawierającą wybrane w formularzu marki</summary>
+    </member>
+    <member name="M:AGDDomex.Models.Formularz.dajRodzaje">
+      <summary>metoda zwracająca tablicę Stringow zawierającą wybrane w formularzu rodzaje produktow</summary>
+    </member>
+    <member name="M:AGDDomex.Models.Formularz.wybierzMarki(List{Produkt})">
+      <summary>metoda zwracająca listę produktow, ktore są produkowane przez marki wybrane w formularzu</summary>
+      <param name="produkty2">parametr zawierajacy listę produktow z ktorych chcemy wybrac te, ktore są produkowane przez wybrane w formularzy marki</param>
+    </member>
+    <member name="M:AGDDomex.Models.Formularz.wybierzRodzaje(List{Produkt})">
+      <summary>metoda zwracająca listę produktow, ktore nalezą do rodzajów wybranych w formularzu</summary>
+      <param name="produkty3">parametr zawierajacy listę produktow z ktorych chcemy wybrac te, ktore należą do rodzajow wybranych w formularzu</param>
+    </member>
+    <member name="M:AGDDomex.Models.Formularz.sortuj(List{Produkt})">
+      <summary>metoda zwracajaca listę produktow posortowana w odpowiedni wybrany w formularzu sposob</summary>
+      <param name="listaWgSortowania">parametr zawierajacy listę produktow ktore chcemy posortowac</param>
+    </member>
+    <member name="M:AGDDomex.Models.Formularz.dajInfo">
+      <summary>metoda zwracająca napis informujacy o tym jakie wartości wybrano w formularzu</summary>
+    </member>
+    <member name="T:AGDDomex.Models.KatalogProduktow">
+      <summary>
+        <para>klasa do tworzenia katalogow produktow</para>
+      </summary>
+    </member>
+    <member name="P:AGDDomex.Models.KatalogProduktow.idKatalogu">
+      <summary>wlasciwosc do przechowywania id katalogu produktow</summary>
+    </member>
+    <member name="P:AGDDomex.Models.KatalogProduktow.nazwa">
+      <summary>wlasciwosc do przechowywania nazwy katalogu produktow</summary>
+    </member>
+    <member name="P:AGDDomex.Models.KatalogProduktow.obrazek">
+      <summary>wlasciwosc do przechowywania sciezki do obrazu odpowiadajacego katalogowi produktow</summary>
+    </member>
+    <member name="M:AGDDomex.Models.KatalogProduktow.#ctor(System.Int32,String,String)">
+      <summary>konstruktor inicjalizujący zmienne katalogu produktow</summary>
+      <param name="nr">liczba zawierająca id katalogu produktow</param>
+      <param name="nazwaK">napis zawierajacy nazwę katalogu produktow</param>
+      <param name="obraz">napis zawierajacy ściezke do obrazku odpowiadajacego katalogowi produktow</param>
+    </member>
+    <member name="M:AGDDomex.Models.KatalogProduktow.#ctor">
+      <summary>konstruktor inicjalizujacy zmienne domyślnymi wartościami</summary>
+    </member>
+    <member name="T:AGDDomex.Models.Koszyk">
+      <summary>klasa do tworzenia koszykow</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Koszyk.idKoszyka">
+      <summary>wlasciwosc do przechowywania id koszyka</summary>
+    </member>
+    <member name="M:AGDDomex.Models.Koszyk.#ctor(System.Int32)">
+      <summary>konstruktor inicjalizujący zmienne koszyka</summary>
+      <param name="idK">liczba zawierająca id koszyka</param>
+    </member>
+    <member name="M:AGDDomex.Models.Koszyk.#ctor">
+      <summary>konstruktor inicjalizujacy zmienne domyślnymi wartościami</summary>
+    </member>
+    <member name="T:AGDDomex.Models.PozycjaKoszyka">
+      <summary>klasa do tworzenia pozycji koszyka</summary>
+    </member>
+    <member name="P:AGDDomex.Models.PozycjaKoszyka.ProduktIdProduktu">
+      <summary>waściwość do przechowywania id produktu ktorego pozycja koszyka dotyczy</summary>
+    </member>
+    <member name="P:AGDDomex.Models.PozycjaKoszyka.KoszykIdKoszyka">
+      <summary>waściwość do przechowywania id koszyka ktorego pozycja koszyka dotyczy</summary>
+    </member>
+    <member name="P:AGDDomex.Models.PozycjaKoszyka.ilosc">
+      <summary>waściwośc do przechowywania ilosci produktu w pozycji koszyka</summary>
+    </member>
+    <member name="M:AGDDomex.Models.PozycjaKoszyka.#ctor(System.Int32,System.Int32,System.Int32)">
+      <summary>konstruktor inicjalizujący zmienne pozycji koszyka</summary>
+      <param name="idP">cyfra zawierajaca id produktu ktorego dotyczy pozycja koszyka</param>
+      <param name="idK">cyfra zawierajaca id koszyka ktorego dotyczy pozycja koszyka</param>
+      <param name="ile">cyfra zawierajaca ilosc produktu w pozycji koszyka</param>
+    </member>
+    <member name="M:AGDDomex.Models.PozycjaKoszyka.#ctor">
+      <summary>konstruktor inicjalizujacy zmienne domyślnymi wartościami</summary>
+    </member>
+    <member name="T:AGDDomex.Models.Produkt">
+      <summary>klasa do tworzenia produktow</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.katalogProduktowIdKatalogu">
+      <summary>waściwość do przechowywania id katalogu do ktorego przypisany jest produkt</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.idProduktu">
+      <summary>waściwość do przechowywania id produktu</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.nazwa">
+      <summary>waściwość do przechowywania nazwy produktu</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.cena">
+      <summary>waściwość do przecgowywania ceny produktu</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.marka">
+      <summary>waściwośc do przechowywania marki produktu</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.ilosc">
+      <summary>waściwość do przechowywania ilosci produktu</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.minimalnaIloscWSklepie">
+      <summary>waściwość do przechowywania minimalnej ilosci produktu w sklepie</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.minimalnaIloscWMagazynie">
+      <summary>waściwość do przechowywania minimalnej ilosci produktu w magazynie</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.zdjecie">
+      <summary>waściwość do przechowywania sciezki do zjecia produktu</summary>
+    </member>
+    <member name="P:AGDDomex.Models.Produkt.szczegoly">
+      <summary>wlasciwosc do przechowywania szczegolowych danych produktu</summary>
+    </member>
+    <member name="M:AGDDomex.Models.Produkt.#ctor(System.Int32,System.Int32,String,System.Single,String,System.Int32,System.Int32,System.Int32,String,String)">
+      <summary>konstruktor inicjalizujacy zmienne produktu</summary>
+      <param name="idKat">cyfra zawierajace id katalogu do ktorego nalezy produkt</param>
+      <param name="idP">cyfra zawieraja id produktu</param>
+      <param name="nazwaP">napis zawierajacy nazwę produktu</param>
+      <param name="koszt">cyfra zawierajaca cyfrę produktu</param>
+      <param name="markaK">napis zawierajacy nazwę marki produktu</param>
+      <param name="ile">cyfra zawierajaca ilosc produktu</param>
+      <param name="ileMinWSklepie">cyfra zawierajaca minimalna ilosc produktu w sklepie</param>
+      <param name="ileMinWMagazynie">cyfra zawierajaca minimalna ilosc produktu w magazynie</param>
+      <param name="zdj">napis zawierajacy sciezke do zdjecia produktu</param>
+      <param name="szcz">napis zawierjacy szczegolowe informacje o produkcie</param>
+    </member>
+    <member name="M:AGDDomex.Models.Produkt.#ctor">
+      <summary>konstruktor inicjalizujacy zmienne domyślnymi wartościami</summary>
+    </member>
+    <member name="M:AGDDomex.Models.Produkt.rosnaco(Produkt,Produkt)">
+      <summary>zwraca liczbe: 1, 0 lub -1 mowiaca o tym w jakim stosunku do siebie są porownywane produkty biorac pod uwage ceny tych produktow gdy chcemy sortowac je rosnaco</summary>
+      <param name="p1">pierwszy porownywany produkt</param>
+      <param name="p2">drugi porownywany produkt</param>
+    </member>
+    <member name="M:AGDDomex.Models.Produkt.malejaco(Produkt,Produkt)">
+      <summary>zwraca liczbe: 1, 0 lub -1 mowiaca o tym w jakim stosunku do siebie są porownywane produkty biorac pod uwage ceny tych produktow gdy chcemy sortowac je malejaco</summary>
+      <param name="p1">pierwszy porownywany produkt</param>
+      <param name="p2">drugi porownywany produkt</param>
+    </member>
+    <member name="T:AGDDomex.Models.WyborKatalogu">
+      <summary>klasa zawierajaca metode do wyboru produktow z wybranego katalogu</summary>
+    </member>
+    <member name="M:AGDDomex.Models.WyborKatalogu.produktyZKatalogu(List{KatalogProduktow},List{Produkt},System.Int32)">
+      <summary>metoda zwracajaca krotkę z lista produktow przypisanych do danego katalogu i z nazwa katalogu</summary>
+      <param name="wszystkieKatalogi">parametr zawierajacy listę wszystkich katalogow produktow w aplikacji</param>
+      <param name="wszystkieProdukty">parametr zawierajacy listę wszystkich produktow w aplikacji</param>
+      <param name="idKat">parametr zawierajacy id katalogu produktu z ktorego produkty chcemy pobraa</param>
+    </member>
+    <member name="T:AGDDomex.Models.WyborParamterow">
+      <summary>klasa z metodami wybierajacymi parametry do formularza</summary>
+    </member>
+    <member name="M:AGDDomex.Models.WyborParamterow.wybierzMarki(List{Produkt})">
+      <summary>metoda zwraca listę nazw marek produkujących produkty będące na liście produktow</summary>
+      <param name="produktyKatalogu">lista produktow z ktorych nazwy marek chcemy wybrac</param>
+    </member>
+    <member name="M:AGDDomex.Models.WyborParamterow.wybierzRodzaje(List{Produkt})">
+      <summary>metoda zwraca listę nazw rodzajow produktow będących na liście produktow</summary>
+      <param name="produktyKatalogu">lista produktow z ktorych nazwy rodzajow produktow chcemy wybrac</param>
+    </member>
+    <member name="T:AGDDomex.Models.WyborProduktu">
+      <summary>klasa posiadająca metodę zwracajacą wybrany produkt</summary>
+    </member>
+    <member name="M:AGDDomex.Models.WyborProduktu.produktWybrany(List{Produkt},System.Int32)">
+      <summary>metoda zwraca produkt ktory zostal wybrany</summary>
+      <param name="wszystkieProdukty">parametr zawierajacy liste wszystkich produktow w aplikacji</param>
+      <param name="index">parametr zawierajacy informacje o tym ktory produkt chcemy dostac</param>
+    </member>
+  </members>
+</doc>

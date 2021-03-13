@@ -1,0 +1,75 @@
+﻿@model AGDDomex.Models.Produkt
+@{
+    ViewBag.Title = "jedenProdukt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="sztuczny">
+    <div id="catalogue">
+        @ViewBag.Produkt.nazwa 
+    </div>
+</div>
+@if (@ViewBag.NoteFromBasket == "Added")
+{
+    <div id="note">
+        Produkt został poprawnie dodany
+    </div>
+}
+@if (@ViewBag.NoteFromBasket == "TooLittle")
+{
+    <div id="note">
+        Nie ma produktu w magazynie
+    </div>
+}
+<div id="falszywy"></div>
+<div id="line">
+</div>
+
+
+<div id="calyProdukt">
+    <div id="zdjProduktuPlace">
+        <div id="zdjProduktu">
+            <img src=@ViewBag.Produkt.zdjecie height="348px" width="329px" />
+        </div>
+    </div>
+
+    <div id="resztaProduktuPlace">
+        <div id="szczegoly">
+            @ViewBag.Produkt.szczegoly
+            Cena: @ViewBag.Produkt.cena zł
+        </div>
+        <div id="przyciskPlace">
+            <div id="przycisk" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("Add", "Koszyk", new {index = ViewBag.Produkt.idProduktu })'">
+                Dodaj do koszyka
+            </div>
+        </div>
+        <div id="przyciskPlace" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("jedenKatalog", "Produkt", new {index = ViewBag.Produkt.katalogProduktowIdKatalogu })'">
+            <div id="przycisk">
+                Wróć do przeglądania
+            </div>
+        </div>
+    </div>
+
+
+    <div id="falszywyPusty2">
+
+    </div>
+
+    <div id="opinie">
+        Opinie klientów
+    </div>
+
+    <div id="przyciskDodania">
+        Dodaj opinie
+    </div>
+
+    <div id="falszywyPusty2">
+
+    </div>
+    <div id="line">
+    </div>
+
+    <div id="falszywyPusty">
+
+    </div>
+

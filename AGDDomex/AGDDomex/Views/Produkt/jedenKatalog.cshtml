@@ -1,0 +1,84 @@
+﻿
+@{
+    ViewBag.Title = "jedenKatalog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if (ViewBag.Niepoprawne)
+{
+    <script>alert("Niepoprawny zapis ceny");</script>
+}
+<div id="sztuczny">
+<div id="catalogue">
+    @ViewBag.MyTuple.Item2
+</div>
+</div>
+<div id="przyciskPlace2" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("KatalogProduktow", "KatalogProduktow")'">
+    <div id="przycisk2">
+        Wróć do katalogów
+    </div>
+</div>
+<div id="falszywy"></div>
+<div id="line">
+</div>
+
+<div id="pasekPoLewej">
+    <form method="post" action='@Url.Action("jedenKatalog", "Produkt", new {index = @ViewBag.Idk})'>
+        <div id="falszywyPusty2"></div>
+        Rodzaj
+        @foreach (var i in ViewBag.Rodzaje)
+        {
+            <div id="combo">
+                <input name="xd" type="checkbox" value="@i" /> @i<br />
+            </div>
+        }
+        <div id="falszywyPusty2"></div>
+        Sortuj
+        <div id="combo" name="comboBox">
+            <input type="radio" name="sort" value="not" checked> Bez sortowania<br>
+            <input type="radio" name="sort" value="ros"> Cena rosnąco<br>
+            <input type="radio" name="sort" value="mal"> Cena malejąco
+        </div>
+        <div id="falszywyPusty2"></div>
+        Maks. cena
+        <input type="text" name="cena" id="IP" value="" />
+        <div id="falszywyPusty2"></div>
+        Marka
+        @foreach (var y in ViewBag.Marki)
+        {
+            <div id="combo">
+                <input name="marki" type="checkbox" value="@y" /> @y<br />
+            </div>
+        }
+        <button type="submit">Zastosuj</button>
+    </form>
+</div>
+<div id="pasekPoPrawej">
+    <div id="falszywyPusty2"></div>
+    <div id="combo">
+        @ViewBag.Info
+    </div>
+    <div id="falszywyPusty2"></div>
+
+    @foreach (var x in ViewBag.MyTuple.Item1)
+    {
+        <div id="bigButtonPlace" runat="server" style="cursor:pointer;" onclick="location.href='@Url.Action("jedenProdukt", "Produkt", new {index = x.idProduktu })'">
+            <div id="bigButton">
+                <div id="zdj">
+                    <img src=@x.zdjecie />
+                </div>
+                <div id="napis">
+                    @x.nazwa
+                </div>
+                <div id="cena">
+                    @x.cena
+                </div>
+            </div>
+            <asp:Button ID="Button1" runat="server" Text="Button" Style="display: none" />
+        </div>
+
+    }
+</div>
+<div id="falszywy">
+
+</div>
+

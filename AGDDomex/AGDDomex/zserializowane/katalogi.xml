@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKatalogProduktow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <KatalogProduktow>
+    <idKatalogu>1</idKatalogu>
+    <nazwa>GOTOWANIE</nazwa>
+    <obrazek>/zdjecia/czajnik_elektryczny_kassel_sza.png</obrazek>
+  </KatalogProduktow>
+  <KatalogProduktow>
+    <idKatalogu>2</idKatalogu>
+    <nazwa>SPRZĄTANIE</nazwa>
+    <obrazek>/zdjecia/odkurzacz_bezworkowy_blaupunkt.png</obrazek>
+  </KatalogProduktow>
+  <KatalogProduktow>
+    <idKatalogu>3</idKatalogu>
+    <nazwa>URODA</nazwa>
+    <obrazek>/zdjecia/ID2.png</obrazek>
+  </KatalogProduktow>
+  <KatalogProduktow>
+    <idKatalogu>4</idKatalogu>
+    <nazwa>PRASOWANIE</nazwa>
+    <obrazek>/zdjecia/ID8509038_0.png</obrazek>
+  </KatalogProduktow>
+  <KatalogProduktow>
+    <idKatalogu>5</idKatalogu>
+    <nazwa>KUCHNIA</nazwa>
+    <obrazek>/zdjecia/electrolux_esf4513lox_22361722.png</obrazek>
+  </KatalogProduktow>
+  <KatalogProduktow>
+    <idKatalogu>6</idKatalogu>
+    <nazwa>PRALKI</nazwa>
+    <obrazek>/zdjecia/electrolux_ew7f348sp_219385514.png</obrazek>
+  </KatalogProduktow>
+  <KatalogProduktow>
+    <idKatalogu>7</idKatalogu>
+    <nazwa>LODÓWKI</nazwa>
+    <obrazek>/zdjecia/pobrane.png</obrazek>
+  </KatalogProduktow>
+  <KatalogProduktow>
+    <idKatalogu>8</idKatalogu>
+    <nazwa>AKCESORIA</nazwa>
+    <obrazek>/zdjecia/pobrane__1_.png</obrazek>
+  </KatalogProduktow>
+</ArrayOfKatalogProduktow>

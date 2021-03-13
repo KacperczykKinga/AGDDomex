@@ -1,0 +1,380 @@
+#container
+{
+    width:1500px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+#logo
+{
+    background-color: rgb(40,43,93);
+    width: 1500px;
+	text-align: left;
+	font-family: Ravie;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 90px;
+	color: rgba(172,121,121,1);   
+}
+#data
+{
+    color: rgba(172,121,121,1);   
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+    align-self: right;
+    font-size: 30px;
+    float: right;
+    padding: 20px;
+}
+#pictures
+{
+    float: right;
+    left: 1827px;
+	top: 25px;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-right: 15px;
+}
+#catalogue
+{
+    clear: both;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+}
+#line
+{
+    background-color: black;
+    height: 5px;
+}
+#bigButtonPlace
+{
+    float: left;
+    padding: 10px;
+}
+#bigButton
+{
+    float: left;
+    width: 329px;
+    height: 348px;
+    overflow: visible;
+    text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+    color: rgba(6,6,6,1);
+    border-width: thin; 
+    border-style: solid; 
+    border-color: black;
+    padding: 10px;
+
+}
+#zdj
+{
+    clear:both;
+    overflow: hidden;
+}
+#napis
+{
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(6,6,6,1);
+}
+#falszywy
+{
+    clear:both;
+}
+#cena
+{
+    text-align: center;
+    font-family: Arial;
+    font-style: bold;
+    font-weight:bold;
+    font-size: 40px;
+    color: rgba(6,6,6,1);
+}
+#zdjProduktuPlace
+{
+    float: left;
+    padding: 20px;
+}
+#zdjProduktu
+{
+    clear: both;
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+}
+#resztaProduktuPlace
+{
+    float: right;
+    padding: 20px;
+    width: 1000px;
+    height: 400px;
+}
+#szczegoly
+{
+    float: left;
+    text-align: left;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    color: rgba(6,6,6,1);
+    font-size: 30px;
+    white-space:pre-wrap;
+}
+#przyciskPlace
+{
+    clear: both;
+    padding: 10px 10px 10px 65px;
+}
+#przycisk
+{
+    clear: both;
+    width: 300px;
+    height: 40px;
+    background-color: rgba(40,43,93,1);
+    color: rgba(172,121,121,1);  
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: center;
+    padding: 30px;
+    border-radius: 30px;
+}
+#opinie
+{
+    float: left;
+	text-align: left;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+    font-size: 50px;
+    width: 400px;
+}
+#przyciskDodania
+{
+    float:right;
+    width: 200px;
+    height: 20px;
+    background-color: rgba(40,43,93,1);
+    color: rgba(172,121,121,1);  
+    font-size: 25px;
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: center;
+    padding: 25px;
+    border-radius: 30px;
+}
+#line2
+{
+    background-color: black;
+    height: 5px;
+    clear: both;
+}
+#falszywyPusty
+{
+    clear: both;
+    height: 200px;
+}
+#falszywyPusty2
+{
+    clear: both;
+    height: 10px;
+}
+#pasekPoLewej
+{
+    float:left;
+    width: 300px;
+    text-align: left;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(6,6,6,1);
+}
+#pasekPoPrawej
+{
+    float:left;
+    width:1200px;
+}
+#combo
+{
+    clear:both;
+    text-align: left;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(6,6,6,1);
+}
+#note
+{
+    background-color:rgba(133,134,163,1);
+    color: rgba(167,88,88,1);
+    border-radius: 30px 0px 0px 30px;
+    text-align: center;
+    width: 500px;
+    height: 60px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    padding: 6px;
+    float:right;
+}
+#sztuczny
+{
+    width:700px;
+    float:left;
+}
+#bigPositionPlace
+{
+    clear:both;
+    padding: 10px;
+}
+#bigPosition
+{
+    clear:both;
+    width:1000px;
+    height: 280px;
+    overflow: visible;
+    text-align: center;
+	font-family: Arial;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+    color: rgba(6,6,6,1);
+    border-width: thin; 
+    border-style: solid; 
+    border-color: black;
+    padding: 10px;
+
+}
+#obokzdjKosz
+{
+    float:left;
+    padding: 10px;
+    text-align: left;
+
+}
+#napisKosz
+{
+    clear:both;
+    width:600px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(6,6,6,1);
+}
+#wKoszyku
+{
+    float:left;
+    width:1000px;
+    text-align: left;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(6,6,6,1);
+}
+#zamow
+{
+    float:right;
+    width: 500px;
+    color: rgba(6,6,6,1);
+}
+#nazwaKat
+{
+    clear:both;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(128,128,128);
+}
+#zdjKosz
+{
+    float:left;
+    overflow: hidden;
+}
+#koszyk
+{
+    float:right;
+    width:50px;
+}
+#napisSumy
+{
+    text-align: left;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(6,6,6,1);
+    padding: 10px;
+}
+#triangle {
+    clear:both;
+    position:relative; left:-218px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 24px solid rgb(2, 2, 2);
+	margin: 10px auto 0;
+}
+#triangle2 {
+    clear:both;
+    position:relative; left:-218px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 24px solid rgb(2, 2, 2);
+	margin: 10px auto 0;
+}
+#cenaKosz
+{
+    float:left;
+    font-family: Arial;
+    font-style: bold;
+    font-weight:bold;
+    font-size: 40px;
+    color: rgba(6,6,6,1);
+    padding: 10px;
+}
+#falszywyPusty3
+{
+    clear: both;
+    height: 20px;
+}
+#przyciskPlace2
+{
+    float: right;
+    width: 400px;
+    padding: 10px 10px 10px 10px;
+}
+#przycisk2
+{
+    width: 200px;
+    height: 20px;
+    background-color: rgba(40,43,93,1);
+    color: rgba(172,121,121,1);  
+    font-size: 15px;
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: center;
+    padding: 10px;
+    border-radius: 30px;
+}
